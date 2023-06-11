@@ -11,7 +11,6 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@ckeditor/strapi-plugin-ckeditor": "^0.0.7",
     "@strapi/plugin-documentation": "4.11.0",
     "@strapi/plugin-i18n": "4.11.0",
     "@strapi/plugin-users-permissions": "4.11.0",
@@ -29,8 +28,5 @@
     "node": ">=14.19.1 <=18.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT",
-  "workspaces": [
-    "./src/plugins/strapi-plugin-ckeditor"
-  ]
+  "license": "MIT"
 }
