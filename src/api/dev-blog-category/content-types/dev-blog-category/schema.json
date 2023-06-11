@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dev_blog_categories",
+  "info": {
+    "singularName": "dev-blog-category",
+    "pluralName": "dev-blog-categories",
+    "displayName": "DevBlogCategory",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "dev_blogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dev-blog.dev-blog",
+      "mappedBy": "dev_blog_category"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

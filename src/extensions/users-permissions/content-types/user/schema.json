@@ -64,9 +64,6 @@
       "target": "plugin::users-permissions.role",
       "inversedBy": "users",
       "configurable": false
-    },
-    "test1": {
-      "type": "richtext"
     }
   }
 }

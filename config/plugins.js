@@ -1,6 +1,10 @@
 // ~/strapi-aws-s3/backend/config/plugins.js
 
 module.exports = ({ env }) => ({
+  ckeditor: {
+    enabled: true,
+    resolve: "./src/plugins/strapi-plugin-ckeditor",
+  },
   upload: {
     config: {
       provider: "aws-s3",

@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "esports_blogs",
+  "info": {
+    "singularName": "esports-blog",
+    "pluralName": "esports-blogs",
+    "displayName": "EsportsBlog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "contents": {
+      "type": "richtext"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "esports_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::esports-category.esports-category",
+      "inversedBy": "esports_blogs"
+    }
+  }
+}
